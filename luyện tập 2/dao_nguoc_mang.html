@@ -6,14 +6,15 @@
 </head>
 <body>
 <script>
-    let  a=[]
-    for (let i = 0;i<3;i++){
-        prompt('nhập vào mảng')
+    let  a=[2,3,5,3,2,8,9,4]
+    function dao_nguoc(a) {
+        for (let i = 0;i<a.length;i++){
+            a.reverse()
+            return a
+        }
+    }
 
-    }
-    for (let i= 0;i<a.length;i++){
-        document.write(a[i])
-    }
+ document.write(dao_nguoc(a))
 </script>
 
 </body>
